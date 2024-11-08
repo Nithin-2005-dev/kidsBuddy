@@ -82,12 +82,13 @@ body {
 .cl-card {
   background-color: #0e3f41;
 }
-.cl-headerTitle,.cl-formFieldLabel {
+.cl-headerTitle,
+.cl-formFieldLabel {
   color: whitesmoke;
 }
-.cl-formButtonPrimary{
+.cl-formButtonPrimary {
   background-color: rgb(95, 95, 200);
 }
-.cl-socialButtonsBlockButton{
+.cl-socialButtonsBlockButton {
   color: whitesmoke;
 }

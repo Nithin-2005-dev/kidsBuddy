@@ -21,7 +21,7 @@ export default function Header() {
   </SheetTitle>
   <div className="flex flex-col text-white text-center py-5 text-xl">
 
-  <Link href={'/progress'} className=" bg-slate-600 m-2 p-1 rounded-xl hover:bg-slate-500">Progress</Link>
+  {/* <Link href={'/progress'} className=" bg-slate-600 m-2 p-1 rounded-xl hover:bg-slate-500">Progress</Link> */}
                 <SignOutButton className=" bg-slate-600 m-2 p-1 rounded-xl hover:bg-slate-500">
                   Sign Out
                 </SignOutButton>  
