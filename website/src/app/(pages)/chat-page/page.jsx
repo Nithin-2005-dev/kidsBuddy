@@ -1,10 +1,11 @@
+import ChatBlock from '@/components/ChatBlock'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      
-    </div>
+   <>
+   <ChatBlock/>
+    </>
   )
 }
 
