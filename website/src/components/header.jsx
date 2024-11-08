@@ -1,5 +1,5 @@
 
-import { Sheet, SheetTrigger, SheetContent, SheetTitle } from "@/components/ui/sheet"
+import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetClose } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible"
@@ -19,7 +19,13 @@ export default function Header() {
           <SheetContent side="left" className='bg-blue-1'>
   <SheetTitle>
   </SheetTitle>
-                <SignOutButton/>  
+  <div className="flex flex-col text-white text-center py-5 text-xl">
+
+  <Link href={'/progress'} className=" bg-slate-600 m-2 p-1 rounded-xl hover:bg-slate-500">Progress</Link>
+                <SignOutButton className=" bg-slate-600 m-2 p-1 rounded-xl hover:bg-slate-500">
+                  Sign Out
+                </SignOutButton>  
+  </div>
           </SheetContent>
         </Sheet>
       </nav>
