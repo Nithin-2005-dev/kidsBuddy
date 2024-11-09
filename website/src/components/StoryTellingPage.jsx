@@ -18,7 +18,6 @@ const StoryTellingPage = () => {
 
     try {
         const response = await askApi(`tell a story on category ${category} for clildren in ${languageRef.current.value==''?'English':languageRef.current.value} language`);
-        console.log(response)
         setStory(response)
         setIsLoading(false)
       } catch (error) {

@@ -79,7 +79,9 @@ const ProblemSolvingBlock = () => {
             }else{
               setIsCorrect(false)
             }
-          }}>Submit</button>
+        languageRef.current.value=''
+          }
+          }>Submit</button>
           {isCorrect?<p >Correct Answer</p>:<p>Incorrect Answer</p>}
         </div>
       ) : (

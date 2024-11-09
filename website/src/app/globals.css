@@ -76,7 +76,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
-.cl-footer {
+.cl-footer ,.cl-internal-1hp5nqm{
   display: none;
 }
 .cl-card {

@@ -45,6 +45,7 @@ const MoralsTellingPage = () => {
         <input type="text" className='w-[80vw] p-2 text-black rounded-lg' placeholder='enter language (optional) ' ref={languageRef}/>
         <button className="bg-blue-500 text-white p-4 rounded-lg shadow-md hover:bg-blue-600" onClick={() => {handleCategorySelect(customStory.current.value)
         customStory.current.value=''
+        languageRef.current.value=''
         }
         }>
         Get Moral Value
