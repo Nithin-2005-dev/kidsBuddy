@@ -17,8 +17,6 @@ def generate_response(user_input, chat_history_ids=None, max_length=1000):
     response_text = tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
     
     return response_text, chat_history_ids
-
-
 print("ChatBud: Hi there! I’m here to help you practice social skills. What's on your mind?")
 
 while True:
