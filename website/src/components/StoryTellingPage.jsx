@@ -8,6 +8,7 @@ const StoryTellingPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
     const customStory=useRef()
+    const languageRef=useRef()
   const categories = ['Adventure', 'Friendship', 'Animals', 'Fairy Tales'];
 
   const handleCategorySelect = async (category) => {
@@ -16,7 +17,7 @@ const StoryTellingPage = () => {
     setError(null);
 
     try {
-        const response = await askApi(`tell a story on category ${category} for clildren`);
+        const response = await askApi(`tell a story on category ${category} for clildren in ${languageRef.current.value==''?'English':languageRef.current.value} language`);
         console.log(response)
         setStory(response)
         setIsLoading(false)
@@ -42,6 +43,7 @@ const StoryTellingPage = () => {
         ))}
         <div className='flex flex-col justify-center w-full gap-2 '> 
         <input type="text" className='w-[80vw] p-2 text-black rounded-lg' placeholder='enter custom category ' ref={customStory}/>
+        <input type="text" className='w-[80vw] p-2 text-black rounded-lg' placeholder='enter language (optional)' ref={languageRef}/>
         <button className="bg-blue-500 text-white p-4 rounded-lg shadow-md hover:bg-blue-600" onClick={() => {handleCategorySelect(customStory.current.value)
         customStory.current.value=''
         }
