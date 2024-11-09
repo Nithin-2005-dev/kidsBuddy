@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
-
+from flask_cors import CORS
 # Initialize the Flask app
 app = Flask(__name__)
-
+CORS(app)
 # Load the tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
 model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
