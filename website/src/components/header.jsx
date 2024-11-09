@@ -14,7 +14,8 @@ export default function Header() {
     <Link href={'/parent-dashboard'}>Parent-dashBoard</Link>
     <UserButton></UserButton>
     </nav>
-      <nav className="flex-1 flex items-center justify-end sm:hidden">
+      <nav className="flex-1 flex items-center justify-between sm:hidden w-full">
+      <UserButton></UserButton>
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className='bg-green-950 text-white shadow-lg hover:bg-green-950 hover:text-white hover:opacity-80 hover:scale-110 '>

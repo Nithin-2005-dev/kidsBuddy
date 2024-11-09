@@ -3,7 +3,7 @@ import React from 'react';
 
 const ParentResources = () => {
   return (
-    <div className="p-8 max-w-4xl mx-auto  rounded-lg shadow-lg text-white">
+    <div className="p-8 mx-auto  rounded-lg shadow-lg text-white">
       <h2 className="text-2xl font-bold mb-6">Resources & Tips for Parents</h2>
 
       <p className="text-sm mb-8">

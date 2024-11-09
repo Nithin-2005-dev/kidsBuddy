@@ -19,7 +19,7 @@ function ConversationInsights() {
   });
 
   return (
-    <div className="p-8 max-w-3xl mx-auto text-white rounded-lg shadow-lg">
+    <div className="p-8 mx-auto text-white rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-6">Conversation Insights</h2>
 
       <div className="mb-8">
