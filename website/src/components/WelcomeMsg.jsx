@@ -16,9 +16,7 @@ const WelcomeMsg = () => {
     <div className='flex flex-col text-center'>
     {
       topics.map((topic,ind)=>{
-        return <button key={ind} className='bg-btn-pri m-1 p-2 font-semibold mx-10 rounded-lg cursor-pointer hover:opacity-75' onClick={()=>{
-
-        }}>{topic}</button>
+        return <Link href={'/chat-page'} key={ind} className='bg-btn-pri m-1 p-2 font-semibold mx-10 rounded-lg cursor-pointer hover:opacity-75' >{topic}</Link>
       })
     }
     </div>
